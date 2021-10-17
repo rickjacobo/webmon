@@ -1,6 +1,4 @@
-param (
-    $Sleep = "true"
-    )
+while ($true) {
     
 cd $PSScriptRoot
 
@@ -165,7 +163,6 @@ WHERE id='[ID]'
     Invoke-SQLQuery -Config $Config -Query $AlertUpdate
 }
 
-if ($Sleep -eq "$true") {
 Start-Sleep -S 300
+
 }
-else {}
