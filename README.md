@@ -46,3 +46,16 @@ Do not populate fields with an *
 | id          | url              | type      | keyword | status | alert | pagerduty_dedup | lastupdate_utc |
 | ----------- | ---------------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | *           | news.google.com  | keyword  | google  |*            |*            |*            |*            |*            |
+
+## Add Services via CLI (Docker Example)
+````
+docker exec -it webmon pwsh add.ps1 -Url "https://news.google.com" -Keyword "google"
+````
+
+## Delete Monitored Service via CLI (Docker Example)
+### Obtain Id
+docker exec -it webmon pwsh webquery.ps1
+
+## Delete Id
+docker exec -it webmon pwsh delete.ps1 -Id <id>
+
