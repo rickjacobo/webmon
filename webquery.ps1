@@ -22,4 +22,4 @@ $Table = (Get-Content $Config | ConvertFrom-Json).table
 $Query = "SELECT * FROM [TABLE]"
 $Query = $Query.Replace("[TABLE]","$Table")
 
-Invoke-SQLQuery -Config $Config -Query $Query | Select Url,type,keyword,status,alert,pagerduty_dedup,lastupdate_utc | Format-Table
+Invoke-SQLQuery -Config $Config -Query $Query | Select id,Url,type,keyword,status,alert,pagerduty_dedup,lastupdate_utc | Format-Table
