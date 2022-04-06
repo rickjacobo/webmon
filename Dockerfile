@@ -4,8 +4,8 @@ RUN mkdir /powershell
 ENV ENV_SQL_HOSTNAME="127.0.0.1"
 ENV ENV_SQL_USERNAME="username"
 ENV ENV_SQL_PASSWORD="password"
-ENV ENV_SQL_DATABASE="opsmon"
-ENV ENV_SQL_TABLE="opsmon"
+ENV ENV_SQL_DATABASE="webmon"
+ENV ENV_SQL_TABLE="webmon"
 ENV ENV_PAGERDUTY_ENDPOINT="https://events.pagerduty.com/v2/enqueue"
 ENV ENV_PAGERDUTY_ROUTING_KEY="1234567890"
 RUN touch /powershell/.config
