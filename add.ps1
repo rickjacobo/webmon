@@ -1,6 +1,5 @@
 param (
 [Parameter(Mandatory=$true)]$Url,
-#[Parameter(Mandatory=$true)][ValidateSet("keyword")]$Type,
 [Parameter(Mandatory=$true)]$Keyword
 )
 
