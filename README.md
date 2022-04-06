@@ -46,7 +46,7 @@ docker exec -it webmon pwsh delete.ps1 -Id <id>
 
   
 ## Services
-There are two example services in the database. When adding new services to monitor you only need to enter the hostname, type, and port. The id, status, alert, pagerduty_dedup, and lastupdate_utc fields are used by the app and don't need to be manually populated.
+There are two example services in the database. When adding new services to monitor you only need to enter the url, type, and keyword. The id, status, alert, pagerduty_dedup, and lastupdate_utc fields are used by the app and don't need to be manually populated.
 ### Url
 Enter the IP address or FQDN of the service to monitor
   
