@@ -8,6 +8,7 @@ ENV ENV_SQL_DATABASE="webmon"
 ENV ENV_SQL_TABLE="webmon"
 ENV ENV_PAGERDUTY_ENDPOINT="https://events.pagerduty.com/v2/enqueue"
 ENV ENV_PAGERDUTY_ROUTING_KEY="1234567890"
+ENV ENV_POLL_FREQUENCY_SECONDS="300"
 RUN touch /powershell/.config
 WORKDIR /powershell
 COPY config.ps1 /powershell
