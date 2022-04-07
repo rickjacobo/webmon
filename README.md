@@ -39,11 +39,14 @@ docker exec -it webmon pwsh add.ps1 -Url "https://news.google.com" -Keyword "goo
 
 ### Delete Monitored Service via CLI (Docker Example)
 #### Obtain Id
+````
 docker exec -it webmon pwsh query.ps1
+````
 
 #### Delete Id
+````
 docker exec -it webmon pwsh delete.ps1 -Id <id>
-
+````
   
 ## Services
 There are two example services in the database. When adding new services to monitor you only need to enter the url, type, and keyword. The id, status, alert, pagerduty_dedup, and lastupdate_utc fields are used by the app and don't need to be manually populated.
