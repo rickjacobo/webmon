@@ -13,7 +13,7 @@ RUN touch /powershell/.config
 WORKDIR /powershell
 COPY config.ps1 /powershell
 COPY webmon.ps1 /powershell
-COPY webquery.ps1 /powershell
+COPY query.ps1 /powershell
 COPY add.ps1 /powershell
 COPY delete.ps1 /powershell
 CMD pwsh config.ps1 && pwsh webmon.ps1
