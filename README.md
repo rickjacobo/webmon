@@ -39,7 +39,7 @@ docker exec -it webmon pwsh add.ps1 -Url "https://news.google.com" -Keyword "goo
 
 ### Delete Monitored Service via CLI (Docker Example)
 #### Obtain Id
-docker exec -it webmon pwsh webquery.ps1
+docker exec -it webmon pwsh query.ps1
 
 #### Delete Id
 docker exec -it webmon pwsh delete.ps1 -Id <id>
