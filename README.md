@@ -1,4 +1,5 @@
 # webmon
+Webmon was built with PowerShell and uses a MySQL backend, container platform (docker, kubernetes, etc), and Pager Duty for alerting and incident management.
 
 ## Requirements
 - Container Platform
