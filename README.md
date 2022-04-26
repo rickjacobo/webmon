@@ -1,6 +1,8 @@
 # webmon
 Webmon is a website monitoring and alerting tool built with PowerShell and uses a MySQL backend, container platform (docker, kubernetes, etc), and Pager Duty for alerting and incident management.
 
+[![Webmon Website Monitoring and Alerting with PagerDuty](https://rickjacobo.com/wp-content/uploads/2022/04/Webmon-Play.png)](https://rickjacobo.com/wp-content/uploads/2022/04/webmon.mp4)
+
 ## Requirements
 - Container Platform
 - MySql Database
